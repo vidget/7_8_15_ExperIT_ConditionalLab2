@@ -11,17 +11,17 @@ namespace _7_8_15_ExperIT_ConditionalLab2
         static void Main(string[] args)
         {
 
-           int seconds = System.DateTime.Now.Second;
+           int seconds = System.DateTime.Now.Second;//sets the int 'seconds' to the current second using System.DateTime.Now.Second
 
-            switch(seconds)
+           
+           switch (seconds)//a swich statement is used to send in the current second and prints out the value based on what 'seconds' is
             {
-                    case 0:
+                case 0:
                     Console.WriteLine("The new minute is just beginning");
                     break;
 
                 case 15:
                     Console.WriteLine("We're one quarter done");
-
                     break;
 
                 case 30:
@@ -38,7 +38,7 @@ namespace _7_8_15_ExperIT_ConditionalLab2
 
             }
 
-            Console.ReadLine();
+            Console.ReadLine();//pause
 
 
         }
